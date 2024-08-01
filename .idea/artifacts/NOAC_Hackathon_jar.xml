@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="NOAC Hackathon:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/NOAC_Hackathon_jar</output-path>
+    <root id="archive" name="NOAC Hackathon.jar">
+      <element id="module-output" name="NOAC Hackathon" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../Obsidian Vault/CS/CS3431/Week 5/JDBC/OTest/OTest/ojdbc8.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
