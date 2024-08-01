@@ -34,16 +34,51 @@ public class Main {
             return;
         }
 
-        System.out.println("Connected.");
+        Scanner getFunction = new Scanner(System.in);
+        System.out.println("Welcome to X.");
+        System.out.println("What do you want to do?");
+        System.out.println("1. Get the current list of Committees");
+        System.out.println("2. Get the current list of Members");
+        System.out.println("3. Add a new member");
+        System.out.println("4. Send out an email");
+        System.out.println("5. Exit");
+
+        System.out.println("Enter your choice: ");
+        int choice = getFunction.nextInt();
+
+        try {
+            switch (choice) {
+                case 1:
+                    getCommittees(connection);
+                    break;
+                case 2:
+                    getMembers(connection);
+                    break;
+                case 3:
+                    addMember(connection);
+                    break;
+                case 4:
+                    sendEmail(connection);
+                    break;
+                case 5:
+                    System.out.println("Have a good day.");
+                    break;
+                default:
+                    System.out.println("Invalid choice. Try again.");
+                    break;
+            }
+        }
+        catch (Exception e) {
+            System.out.println("An error occurred. See the following error: " + e);
+        }
+    }
+
+    public static void getCommittees(Connection connection) {
 
     }
 
-    public static void locations (Connection connection) {
-        Scanner locationIDScanner = new Scanner(System.in);
-        System.out.println("Enter Location ID: ");
-
-        String locationID = locationIDScanner.nextLine();
-        try {
+    public static void getMembers (Connection connection) {
+        /*try {
             Statement stmt = connection.createStatement();
             String sqlQuery = "SELECT * FROM Locations WHERE locationID = '" + locationID + "'";
             ResultSet rs = stmt.executeQuery(sqlQuery);
@@ -73,6 +108,14 @@ public class Main {
         }
         catch (SQLException e) {
             System.out.println("An error occurred when selecting the location input. See the following: " + e);
-        }
+        }*/
+    }
+
+    public static void addMember (Connection connection) {
+
+    }
+
+    public static void sendEmail (Connection connection) {
+
     }
 }
