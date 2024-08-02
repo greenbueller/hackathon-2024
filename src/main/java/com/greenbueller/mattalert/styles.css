@@ -1,0 +1,18 @@
+.button {
+    -fx-background-color: #007BFF; /* Button background color */
+    -fx-text-fill: white; /* Button text color */
+    -fx-border-radius: 10px; /* Round edges */
+    -fx-background-radius: 10px; /* Round edges */
+}
+
+.text-area {
+    -fx-border-color: #007BFF; /* Text area border color */
+    -fx-border-radius: 10px; /* Round edges */
+    -fx-background-radius: 10px; /* Round edges */
+}
+
+.text-field {
+    -fx-border-color: #007BFF; /* Text field border color */
+    -fx-border-radius: 10px; /* Round edges */
+    -fx-background-radius: 10px; /* Round edges */
+}
